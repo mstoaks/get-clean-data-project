@@ -6,7 +6,7 @@ This repository contains one script called "run_analysis.R"
 ###How run_analysis.R works:
 The run_analysis.R script assumes the following data
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-has been downloaded into a directory names "./data"
+has been downloaded into a subdirectory "./data".
 
 The following files are expected:
 * ./data/activity_labels.txt
@@ -19,6 +19,7 @@ The following files are expected:
 * ./data/train/subject_train.txt
 
 It does the following:
+
 1. loads the dlpyr and sqldf libraries
 2. reads the test and train data files (X_test.txt, X_train.txt)
 3. merges them using rbind()
