@@ -62,3 +62,5 @@ allSubjects <- rbind(testPhaseSubjects, trainPhaseSubjects)
 names(allSubjects) = "subjectID"
 
 allRawData <- cbind(allSubjects, allRawData)
+
+write.table(allRawData, "tidydataset.txt", row.names=FALSE)
