@@ -27,4 +27,6 @@ It does the following:
 5. extracts only the mean and std features. I.e. those features that contain "mean()" or "std()" in their name
 6. adds the activity labels for each row (data/activity_labels.txt, data/test/y_test.txt, data/test/y_train.txt)
 7. adds the subject data for each row (data/test/subject_test.txt, data/train/subject_train.txt)
-8. writes a text file "tidydataset.txt"
+8. creates a tidy data set using melt() and dcast() - generates a wide tidy set
+9. creates a narrow tidy data set using ddply()
+10. writes the narrow tidy data set to disk as tidydata-narrow.txt
