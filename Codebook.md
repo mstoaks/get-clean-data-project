@@ -1,4 +1,4 @@
-#Class Project Codebook - Getting and Cleaning Data
+##Class Project Codebook - Getting and Cleaning Data
 
 This analysis uses the data files available here:
 
@@ -17,8 +17,9 @@ Tbe script run_analysis.R assumes that the data has been unpacked into a subdire
 The download also contains a README.txt file which explains the files in detail.
 
 
-#Data Used for the Analysis
+##Data Used for the Analysis
 Of the data provided by the above set and described in features.txt, I used the following variables:
+
 tBodyAcc-mean()-X           tBodyAcc-mean()-Y           tBodyAcc-mean()-Z          
 tGravityAcc-mean()-X        tGravityAcc-mean()-Y        tGravityAcc-mean()-Z        tBodyAccJerk-mean()-X       tBodyAccJerk-mean()-Y      
 tBodyAccJerk-mean()-Z       tBodyGyro-mean()-X          tBodyGyro-mean()-Y          tBodyGyro-mean()-Z          tBodyGyroJerk-mean()-X     
@@ -34,8 +35,8 @@ fBodyAcc-std()-X            fBodyAcc-std()-Y            fBodyAcc-std()-Z        
 fBodyAccJerk-std()-Z        fBodyGyro-std()-X           fBodyGyro-std()-Y           fBodyGyro-std()-Z           fBodyAccMag-std()          
 fBodyBodyAccJerkMag-std()   fBodyBodyGyroMag-std()      fBodyBodyGyroJerkMag-std() 
 
-These were chosen because the other features (many of the frequency domain variables) were duplicated and thus were likely faulty data. For details, see this thread:
-https://class.coursera.org/getdata-031/forum/thread?thread_id=214
+**These were chosen because the other features (many of the frequency domain variables) were duplicated and thus were likely faulty data. For details, see this thread:
+https://class.coursera.org/getdata-031/forum/thread?thread_id=214**
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -51,7 +52,7 @@ For more details on these data, see the features_info.txt file in the data zip. 
 https://github.com/mstoaks/get-clean-data-project/blob/master/data/features_info.txt
 
 
-#Tidy Data Set Info
+##Tidy Data Set Info
 run_analysis.R creates tidy data sets and writes a narrow version to disk called tidydata-narrow.txt.
 
 This data set contains the following columns:
