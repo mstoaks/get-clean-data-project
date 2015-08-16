@@ -56,10 +56,11 @@ https://github.com/mstoaks/get-clean-data-project/blob/master/data/features_info
 run_analysis.R creates tidy data sets and writes a narrow version to disk called tidydata-narrow.txt.
 
 This data set contains the following columns:
-subjectId - the identity of the subject
-activityName - the name of the activity the subject participated in (i.e. WALKING, etc.)
-feature - the feature being measured
-featureMean - the mean value of the feature for over multiple runs
+
+* subjectId - the identity of the subject
+* activityName - the name of the activity the subject participated in (i.e. WALKING, etc.)
+* feature - the feature being measured
+* featureMean - the mean value of the feature for over multiple runs
 
 
 
