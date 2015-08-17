@@ -1,25 +1,28 @@
 ##Class Project Codebook - Getting and Cleaning Data
 
-This analysis uses the data files available here:
+##Raw Data
+This analysis uses the data from the Human Activity Using Smartphones Data Set Version 1.0 (Reyes-Ortiz et al.)
+The data along with detailed descriptions are available here:
 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-Tbe script run_analysis.R assumes that the data has been unpacked into a subdirectory called ./data. Specifically, it assumes and uses the following data files
-./data/activity_labels.txt
-./data/features.txt
-./data/test/X_test.txt
-./data/test/y_test.txt
-./data/test/subject_test.txt
-./data/train/X_train.txt
-./data/train/y_train.txt
-./data/train/subject_train.txt
+Tbe analysis script (run_analysis.R) assumes that the data has been extracted into a subdirectory called ./data. Specifically, the script expects the following data files
+* ./data/activity_labels.txt
+* ./data/features.txt
+* ./data/test/X_test.txt
+* ./data/test/y_test.txt
+* ./data/test/subject_test.txt
+* ./data/train/X_train.txt
+* ./data/train/y_train.txt
+* ./data/train/subject_train.txt
 
-The download also contains a README.txt file which explains the files in detail.
+The download also contains descriptive files including a README.txt file which explains the files in more detail.
 
 
 ##Data Used for the Analysis
-Of the data provided by the above set and described in features.txt, I used the following variables:
+The raw data is described in features_info.txt. The specific features (variables) are listed in features.txt. I used the following **subset**:
 
+```
 tBodyAcc-mean()-X           tBodyAcc-mean()-Y           tBodyAcc-mean()-Z          
 tGravityAcc-mean()-X        tGravityAcc-mean()-Y        tGravityAcc-mean()-Z        tBodyAccJerk-mean()-X       tBodyAccJerk-mean()-Y      
 tBodyAccJerk-mean()-Z       tBodyGyro-mean()-X          tBodyGyro-mean()-Y          tBodyGyro-mean()-Z          tBodyGyroJerk-mean()-X     
@@ -34,6 +37,7 @@ tBodyAccMag-std()           tGravityAccMag-std()        tBodyAccJerkMag-std()   
 fBodyAcc-std()-X            fBodyAcc-std()-Y            fBodyAcc-std()-Z            fBodyAccJerk-std()-X        fBodyAccJerk-std()-Y       
 fBodyAccJerk-std()-Z        fBodyGyro-std()-X           fBodyGyro-std()-Y           fBodyGyro-std()-Z           fBodyAccMag-std()          
 fBodyBodyAccJerkMag-std()   fBodyBodyGyroMag-std()      fBodyBodyGyroJerkMag-std() 
+```
 
 **These were chosen because the other features (many of the frequency domain variables) were duplicated and thus were likely faulty data. For details, see this thread:
 https://class.coursera.org/getdata-031/forum/thread?thread_id=214**
