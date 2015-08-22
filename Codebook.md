@@ -78,6 +78,10 @@ This data set contains the following columns:
 * feature - the feature being measured
 * featureMean - the mean value of the feature for over multiple runs
 
+###Data Units
+Note that the data used has all been normalized and is as such unit-less. For details, see the following thread:
+https://class.coursera.org/getdata-031/forum/thread?thread_id=113#comment-1006
+
 
 
 
